@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מציאת תכנית לימוד מתאימה - CareerPath.ai</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #ffffff;
+            --accent-color: #ffd700;
+            --text-color: #333333;
+            --background-color: #f4f4f4;
+            --hover-color: #0055aa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .question {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+        
+        .submit-button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: block;
+            margin: 2rem auto;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--hover-color);
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            background-color: #333;
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>מציאת תכנית לימוד מתאימה</h1>
+    </header>
+
+    <main>
+        <form id="study-program-form">
+            <div class="question">
+                <h2>1. האם אתה מחפש אוניברסיטה או מכללה?</h2>
+                <label><input type="radio" name="institution" value="university"> אוניברסיטה</label>
+                <label><input type="radio" name="institution" value="college"> מכללה</label>
+            </div>
+
+            <div class="question">
+                <h2>2. באיזה אזור בארץ?</h2>
+                <label><input type="radio" name="region" value="north"> צפון</label>
+                <label><input type="radio" name="region" value="center"> מרכז</label>
+                <label><input type="radio" name="region" value="south"> דרום</label>
+            </div>
+
+            <div class="question">
+                <h2>3. האם אתה מחפש תואר או לימודי תעודה?</h2>
+                <label><input type="radio" name="program-type" value="degree"> תואר</label>
+                <label><input type="radio" name="program-type" value="certificate"> לימודי תעודה</label>
+            </div>
+
+            <button type="submit" class="submit-button">חפש תכניות לימוד מתאימות</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CareerPath.ai. כל הזכויות שמורות.</p>
+    </footer>
+
+    <script>
+        document.getElementById('study-program-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('תודה על מילוי השאלון! אנו מחפשים תכניות לימוד מתאימות עבורך.');
+            // כאן תוכל להוסיף קוד לשליחת התשובות לשרת או לעיבוד נוסף
+        });
+    </script>
+</body>
+</html>

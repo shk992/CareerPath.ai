@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאלון קריירה - CareerPath.ai</title>
+    <style>
+        /* הסגנונות זהים לשאלון האישיות */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <h1>שאלון קריירה</h1>
+    <form id="career-form">
+        <div class="question">
+            <p>1. מהו התחום המקצועי שמעניין אותך ביותר?</p>
+            <label><input type="radio" name="q1" value="1"> טכנולוגיה ומחשבים</label>
+            <label><input type="radio" name="q1" value="2"> מדעים וחינוך</label>
+            <label><input type="radio" name="q1" value="3"> עסקים וכלכלה</label>
+            <label><input type="radio" name="q1" value="4"> אמנות ועיצוב</label>
+            <label><input type="radio" name="q1" value="5"> בריאות ורפואה</label>
+        </div>
+        
+        <div class="question">
+            <p>2. איזה סוג של סביבת עבודה אתה מעדיף?</p>
+            <label><input type="radio" name="q2" value="1"> משרד מסורתי</label>
+            <label><input type="radio" name="q2" value="2"> עבודה מהבית</label>
+            <label><input type="radio" name="q2" value="3"> סביבת עבודה פתוחה</label>
+            <label><input type="radio" name="q2" value="4"> עבודה בשטח</label>
+            <label><input type="radio" name="q2" value="5"> מעבדה או סטודיו</label>
+        </div>
+        
+        <div class="question">
+            <p>3. מהי המטרה המקצועית שלך לטווח הארוך?</p>
+            <label><input type="radio" name="q3" value="1"> להיות מומחה בתחום</label>
+            <label><input type="radio" name="q3" value="2"> להיות מנהל בכיר</label>
+            <label><input type="radio" name="q3" value="3"> להקים עסק משלי</label>
+            <label><input type="radio" name="q3" value="4"> לתרום לחברה</label>
+            <label><input type="radio" name="q3" value="5"> לאזן בין קריירה לחיים אישיים</label>
+        </div>
+        
+        <!-- הוסף עוד שאלות כאן -->
+        
+        <button type="submit">שלח תשובות</button>
+    </form>
+
+    <script>
+        document.getElementById('career-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('תודה על מילוי השאלון! התשובות שלך נשלחו.');
+            // כאן תוכל להוסיף קוד לשליחת התשובות לשרת או לעיבוד נוסף
+        });
+    </script>
+</body>
+</html>
